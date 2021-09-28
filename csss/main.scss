@@ -280,6 +280,7 @@ a {
 		-moz-filter: brightness(70%);
 	}
 }
+// halaman 2
 .page {
 	background: #EBEBEB;
 	margin-top: 10.8em;
@@ -298,6 +299,7 @@ a {
 	justify-content: center;
 }
 .content-img {
+	min-width: 100%;
 	img {
 		max-width: 100%;
 		height: auto;
@@ -375,6 +377,7 @@ li {
 	margin: 0;
 	margin: 2em 0;
 }
+// solution
 .solution {
 	padding: 10em 14em;
 	background: rgb(255, 255, 255);
@@ -602,6 +605,24 @@ footer {
 		height: auto;
 	}
 }
+.contents-text {
+	p {
+		h2 {
+			font-size: 30px;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 1440px) {
 	input {
 		opacity: 0;
@@ -693,6 +714,67 @@ footer {
 		}
 	}
 }
+// halaman 2
+.page {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+.content-text {
+	p {
+		&::after {
+			position: absolute;
+			content: "";
+			right: 70%;
+		}
+	}
+	h2 {
+		width: 75%;
+		font-size: 45px;
+	}
+}
+.solution {
+	padding: 8em ;
+	padding-left: 14em;
+}
+.left {
+	h4 {
+	
+	}
+	h1 {
+		font-size: 3.7em;
+		width: 70%;
+	}
+}
+.todo-list {
+	padding: 3em;
+}
+.todo {
+	h2 {
+		font-size: 24px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 1000px) {
     .fa-up {
         display: none;

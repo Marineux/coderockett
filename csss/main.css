@@ -368,6 +368,10 @@ a span {
           justify-content: center;
 }
 
+.content-img {
+  min-width: 100%;
+}
+
 .content-img img {
   max-width: 100%;
   height: auto;
@@ -727,6 +731,10 @@ footer {
   }
 }
 
+.contents-text p h2 {
+  font-size: 30px;
+}
+
 @media screen and (max-width: 1440px) {
   input {
     opacity: 0;
@@ -826,6 +834,40 @@ footer {
   .image img {
     height: 450px;
   }
+}
+
+.page {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.content-text p::after {
+  position: absolute;
+  content: "";
+  right: 70%;
+}
+
+.content-text h2 {
+  width: 75%;
+  font-size: 45px;
+}
+
+.solution {
+  padding: 8em;
+  padding-left: 14em;
+}
+
+.left h1 {
+  font-size: 3.7em;
+  width: 70%;
+}
+
+.todo-list {
+  padding: 3em;
+}
+
+.todo h2 {
+  font-size: 24px;
 }
 
 @media screen and (max-width: 1000px) {
