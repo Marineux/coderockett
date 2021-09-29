@@ -171,8 +171,8 @@ nav ul li {
   text-align: center;
   line-height: 50px;
   color: #ffffff;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .hero .fa-up:hover {
@@ -344,7 +344,7 @@ a span {
 }
 
 .page {
-  background: #EBEBEB;
+  background: #ebebeb;
   margin-top: 10.8em;
   height: 900px;
 }
@@ -390,7 +390,7 @@ a span {
   color: #747474;
   font-weight: 600;
   font-size: 12px;
-  letter-spacing: .6px;
+  letter-spacing: 0.6px;
   position: relative;
   left: 5px;
 }
@@ -399,7 +399,7 @@ a span {
   position: absolute;
   content: '';
   top: 7px;
-  right: 80%;
+  left: 120px;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   width: 5%;
@@ -416,7 +416,7 @@ a span {
 }
 
 .content-text h2 span {
-  color: #4B8DFF;
+  color: #4b8dff;
 }
 
 .contents-text b {
@@ -476,9 +476,9 @@ li {
 
 .left h4 {
   color: #747474;
-  font-size: .9em;
+  font-size: 0.9em;
   font-weight: 600;
-  letter-spacing: .8px;
+  letter-spacing: 0.8px;
   position: relative;
 }
 
@@ -495,14 +495,14 @@ li {
 }
 
 .left span {
-  color: #4B8DFF;
+  color: #4b8dff;
   font-weight: 500;
 }
 
 .left h1 {
   font-size: 4rem;
   width: 60%;
-  margin: .5em 0;
+  margin: 0.5em 0;
   font-weight: 500;
 }
 
@@ -555,7 +555,7 @@ li {
   position: relative;
   font-weight: 500;
   font-size: 14px;
-  letter-spacing: .2px;
+  letter-spacing: 0.2px;
 }
 
 .text-galeri h1::after {
@@ -573,7 +573,7 @@ li {
   display: grid;
   width: 65%;
   margin: auto;
-      grid-template-areas: "raw riw" "raww riw";
+      grid-template-areas: 'raw riw' 'raww riw';
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
   -ms-grid-rows: 1fr 1fr;
@@ -599,10 +599,10 @@ li {
   cursor: pointer;
   -webkit-filter: brightness(60%);
           filter: brightness(60%);
-  -webkit-transition: -webkit-transform .5s ease;
-  transition: -webkit-transform .5s ease;
-  transition: transform .5s ease;
-  transition: transform .5s ease, -webkit-transform .5s ease;
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
 }
 
 .cube .galleri img:hover {
@@ -843,7 +843,7 @@ footer {
 
 .content-text p::after {
   position: absolute;
-  content: "";
+  content: '';
   right: 70%;
 }
 
@@ -870,7 +870,7 @@ footer {
   font-size: 24px;
 }
 
-@media screen and (max-width: 1000px) {
+@media only screen and (max-width: 1024px) {
   .fa-up {
     display: none;
   }
@@ -879,9 +879,14 @@ footer {
   }
   .navbar {
     position: fixed;
+    z-index: 100;
   }
   .container-1 {
     padding-top: 20px;
+  }
+  .logo {
+    padding-left: 5em;
+    padding-top: 1em;
   }
   .logo img {
     width: 38px;
@@ -1120,6 +1125,9 @@ footer {
     border-radius: 50px;
   }
   section {
+    padding: 5em 4em;
+  }
+  .hero {
     padding: 10em 4em;
   }
   .hero .container {
@@ -1163,6 +1171,42 @@ footer {
   .button {
     z-index: -5;
   }
+  .contents {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-left: 1em;
+  }
+  .contents .content-img {
+    height: 100%;
+    background-image: url("https://images.unsplash.com/photo-1541240290619-3f2fad86473d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=387&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .contents .content-img img {
+    display: none;
+  }
+  .contents .content-text {
+    margin-left: 2em;
+  }
+  .contents .content-text p::after {
+    position: absolute;
+    content: '';
+    right: 67%;
+  }
+  .solution {
+    padding-left: 7em;
+    padding-right: 1em;
+  }
+  .left h1 {
+    font-size: 3.5em;
+  }
+  .text-galeri, .cube {
+    width: 85%;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -1175,6 +1219,10 @@ footer {
   }
   nav .section-nav {
     margin-left: -50px;
+  }
+  .content-text h2 {
+    font-size: 35px;
+    width: 100%;
   }
 }
 
