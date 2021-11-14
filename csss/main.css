@@ -27,6 +27,7 @@
 /* nav 2 */
 /* akhir nav 2 */
 /* nav semua */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -42,6 +43,10 @@ body {
   font-family: 'Montserrat';
   overflow-x: hidden;
   height: 3000px;
+}
+
+.semua {
+  width: 1920px;
 }
 
 .navbar .container-1 {
@@ -619,6 +624,9 @@ footer {
 }
 
 @media screen and (min-width: 1500px) {
+  .semua {
+    width: 1920px;
+  }
   input {
     opacity: 0;
   }
